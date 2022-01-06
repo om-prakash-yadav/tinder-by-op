@@ -1,21 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { AuthProvider } from './Hooks/useAuth';
+import StackNavigator from './StackNavigator';
+import { LogBox } from 'react-native';
+LogBox.ignoreAllLogs(); // ignore all log messages 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+   <NavigationContainer>
+     {/* H.O.C - Higher order Component  */}
+     <AuthProvider>
+       {/* passing down the authentication to childs */}
+     <StackNavigator />
+     </AuthProvider>
+
+   </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
