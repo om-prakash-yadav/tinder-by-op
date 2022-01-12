@@ -9,7 +9,6 @@ import {
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useNavigation } from "@react-navigation/core";
 import useAuth from "../Hooks/useAuth";
-import { SafeAreaView } from "react-native-safe-area-context";
 import tw from "tailwind-rn";
 import { AntDesign, Entypo, Ionicons } from "@expo/vector-icons";
 import Swiper from "react-native-deck-swiper";

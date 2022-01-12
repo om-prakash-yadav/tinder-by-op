@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "tinder-by-op",
+    "name": "Tunder",
     "slug": "tinder-by-op",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,9 +13,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -24,7 +22,13 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "host.exp.exponent"
+      "package": "com.omprakash.clone",
+      "config": {
+        "googleSignIn": {
+          "certificateHash": "6EB4F68E7C7A76D50B04505B281921668112846B",
+          "apiKey": "AIzaSyBCH3Ka7ILhbbo1f4RsUH8mNuVwuyk_x9M"
+        }
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"

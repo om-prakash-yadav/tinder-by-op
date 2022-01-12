@@ -1,49 +1,34 @@
 {
   "project_info": {
-    "project_number": "873883295445",
-    "project_id": "tinder-by-op",
-    "storage_bucket": "tinder-by-op.appspot.com"
+    "project_number": "793204212397",
+    "project_id": "tunder-be387",
+    "storage_bucket": "tunder-be387.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:873883295445:android:d120d36eda1d3503a3cc5c",
+        "mobilesdk_app_id": "1:793204212397:android:5e28208906300ea8ffbc24",
         "android_client_info": {
-          "package_name": "host.exp.exponent"
+          "package_name": "com.omprakash.clone"
         }
       },
       "oauth_client": [
         {
-          "client_id": "873883295445-cu83ir3khuarskpl06qnq5qtlvt91v51.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "host.exp.exponent",
-            "certificate_hash": "dd34c82e5fdbc5363adb3dbcbd0262e48a5845c8"
-          }
-        },
-        {
-          "client_id": "873883295445-ai3bnghc5cmklogsiqssgmlt1c5n0v1o.apps.googleusercontent.com",
+          "client_id": "793204212397-ho9tdmeisogui5u7csukslfhafhp87go.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCbVRuyUYyMvf6QUB1z_02Tvbib-YRY_hs"
+          "current_key": "AIzaSyBCH3Ka7ILhbbo1f4RsUH8mNuVwuyk_x9M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "873883295445-ai3bnghc5cmklogsiqssgmlt1c5n0v1o.apps.googleusercontent.com",
+              "client_id": "793204212397-ho9tdmeisogui5u7csukslfhafhp87go.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "873883295445-upb0l7nvntr3nheg3c3gdfgnpt8nrjcs.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "host.exp.exponent"
-              }
             }
           ]
         }

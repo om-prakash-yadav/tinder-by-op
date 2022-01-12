@@ -11,10 +11,9 @@ import { auth } from "../firebase";
 const AuthContext = createContext({});
 
 const config = {
-  iosClientId:
-    "873883295445-upb0l7nvntr3nheg3c3gdfgnpt8nrjcs.apps.googleusercontent.com",
   androidClientId:
-    "873883295445-cu83ir3khuarskpl06qnq5qtlvt91v51.apps.googleusercontent.com",
+    "793204212397-euk4s5p9ul054o1rm2737rv6t37tgpsv.apps.googleusercontent.com",
+    androidStandaloneAppClientId: `793204212397-1f92c27e84uu312gqlff9mj0ok98cket.apps.googleusercontent.com`,
   scopes: ["profile", "email"],
   Permissions: ["public_profile", "email", "gender", "location"],
 };

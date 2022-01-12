@@ -7,16 +7,17 @@ import {getFirestore} from "firebase/firestore"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDSQz-zjKITwuby_Nd7WA66i_r92QnLp0g",
-  authDomain: "tinder-by-op.firebaseapp.com",
-  projectId: "tinder-by-op",
-  storageBucket: "tinder-by-op.appspot.com",
-  messagingSenderId: "873883295445",
-  appId: "1:873883295445:web:8df5e37dea97c771a3cc5c"
+  apiKey: "AIzaSyCiXnMlnLO-lriQyenrQQrfVumJNotSdno",
+  authDomain: "tunder-be387.firebaseapp.com",
+  databaseURL: "https://tunder-be387-default-rtdb.firebaseio.com",
+  projectId: "tunder-be387",
+  storageBucket: "tunder-be387.appspot.com",
+  messagingSenderId: "793204212397",
+  appId: "1:793204212397:web:1ca571e768a17548ffbc24"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const db = getFirestore();
-export {auth , db}
+export {auth , db , app}
