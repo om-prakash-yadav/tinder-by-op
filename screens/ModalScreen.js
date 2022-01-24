@@ -30,7 +30,6 @@ const ModalScreen = () => {
 
   const pickImage = async () => {
     if (loading) return;
-    setLoading(true);
     // No permissions request is necessary for launching the image library
     if (Platform.OS !== "web") {
       const { status } =
@@ -43,11 +42,12 @@ const ModalScreen = () => {
     let result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes: ImagePicker.MediaTypeOptions.All,
       allowsEditing: true,
-      aspect: [3, 4],
+      aspect: [4, 5],
       quality: 1,
     });
 
     if (!result.cancelled) {
+      setLoading(true);
       const uploadUrl = await uploadImageAsync(result.uri);
       setImage(uploadUrl);
       setLoading(false);

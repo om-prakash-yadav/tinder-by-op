@@ -47,15 +47,15 @@ const HomeScreen = () => {
     let unsub;
 
     const fetchCards = async () => {
-      const passes = getDocs(collection(db, "users", user.uid, "passes")).then(
+      const passes = await getDocs(collection(db, "users", user.uid, "passes")).then(
         (snapshot) => snapshot.docs.map((doc) => doc.id)
       );
-      const swipes = getDocs(collection(db, "users", user.uid, "swipes")).then(
+      const swipes = await getDocs(collection(db, "users", user.uid, "swipes")).then(
         (snapshot) => snapshot.docs.map((doc) => doc.id)
       );
 
-      const passedUserIds = (await passes).length > 0 ? passes : ["test"];
-      const swipedUserIds = (await swipes).length > 0 ? swipes : ["test"];
+      const passedUserIds = passes.length > 0 ? passes : ["testpass"];
+      const swipedUserIds = swipes.length > 0 ? swipes : ["testswipe"];
 
       unsub = onSnapshot(
         query(
