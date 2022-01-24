@@ -55,7 +55,7 @@ const HomeScreen = () => {
       );
 
       const passedUserIds = (await passes).length > 0 ? passes : ["test"];
-      const swipedUserIds = (await swipes).length > 0 ? passes : ["test"];
+      const swipedUserIds = (await swipes).length > 0 ? swipes : ["test"];
 
       unsub = onSnapshot(
         query(
